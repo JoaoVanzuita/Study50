@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Study 5.0</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Username</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configurações</string>
+    <string name="pesquisar">Pesquisar</string>
+
+    <string name="descricao">Descrição</string>
+    <string name="procurar_turmas">Turmas</string>
+    <string name="conversas">Conversas</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="configuracoes">Configurações</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="turmas">Turmas</string>
+    <string name="modo_escuro">Ativar modo escuro</string>
+    <string name="nome_da_turma">Nome da turma</string>
+    <string name="adicionar_turma">Adicionar turma</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
+    <string name="registrar">Registrar</string>
+    <string name="texto_bt_register">Ainda não possui uma conta?</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="idade">Idade</string>
+    <string name="assunto_favorito">Assunto favorito</string>
+    <string name="icone_do_app">Ícone do app</string>
+
+</resources>

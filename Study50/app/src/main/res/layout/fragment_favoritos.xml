@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FavoritosFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista_favoritos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <!--<RelativeLayout
+        android:id="@+id/turma2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/icone_turma2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_baseline_school_24" />
+
+        <TextView
+            android:id="@+id/nome_turma2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/icone_turma2"
+            android:textSize="25sp"
+            android:text="Nome da turma 2" />
+
+        <ImageView
+            android:id="@+id/img_star2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_baseline_star_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/turma3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/turma2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/icone_turma3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_baseline_school_24" />
+
+        <TextView
+            android:id="@+id/nome_turma3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/icone_turma3"
+            android:textSize="25sp"
+            android:text="Nome da turma 3" />
+
+        <ImageView
+            android:id="@+id/img_star3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_baseline_star_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/turma5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/turma3"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/icone_turma5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_baseline_school_24" />
+
+        <TextView
+            android:id="@+id/nome_turma5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/icone_turma5"
+            android:textSize="25sp"
+            android:text="Nome da turma 5" />
+
+        <ImageView
+            android:id="@+id/img_star5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_baseline_star_24" />
+    </RelativeLayout>-->
+
+
+</LinearLayout>

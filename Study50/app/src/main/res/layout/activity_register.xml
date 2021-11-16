@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icone_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="170dp"
+                android:contentDescription="@string/icone_do_app"
+                android:src="@mipmap/ic_launcher_round" />
+
+
+            <TextView
+                android:id="@+id/tv_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icone_app"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_app_name"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:hint="@string/nome"
+                android:inputType="textPersonName"
+                android:textSize="25sp" />
+
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textSize="25sp" />
+
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:hint="@string/senha"
+                android:inputType="textPassword"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/et_idade"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:hint="@string/idade"
+                android:inputType="numberDecimal"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/et_assunto_favorito"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_idade"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:hint="@string/assunto_favorito"
+                android:inputType="text"
+                android:textSize="25sp" />
+
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_assunto_favorito"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="@string/registrar" />
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+</ScrollView>
