@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Study 5.0</string>
+    <string name="app_name">Study</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Username</string>
@@ -27,13 +27,13 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+
     <string name="turmas">Turmas</string>
     <string name="modo_escuro">Ativar modo escuro</string>
     <string name="nome_da_turma">Nome da turma</string>
     <string name="adicionar_turma">Adicionar turma</string>
     <string name="title_activity_login">LoginActivity</string>
-
 
     <string name="usuario">Usuário</string>
     <string name="senha">Senha</string>
@@ -45,5 +45,9 @@
     <string name="idade">Idade</string>
     <string name="assunto_favorito">Assunto favorito</string>
     <string name="icone_do_app">Ícone do app</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="alterar_idioma">Alterar idioma</string>
+    <string name="entrar_em_contato">Entrar em contato com\n os desenvolvedores</string>
+    <string name="logout">Logout</string>
 
 </resources>

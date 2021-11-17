@@ -13,8 +13,8 @@ import com.example.study50.R;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    EditText et_username, et_email, et_password, et_idade, et_assunto_favorito;
-    Button bt_login;
+    private EditText et_username, et_email, et_password, et_idade, et_assunto_favorito;
+    private Button bt_registrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,20 +27,23 @@ public class RegisterActivity extends AppCompatActivity {
         et_idade = findViewById(R.id.et_idade);
         et_assunto_favorito = findViewById(R.id.et_assunto_favorito);
 
-        bt_login = findViewById(R.id.bt_login);
+        bt_registrar = findViewById(R.id.bt_registrar);
 
-        bt_login.setOnClickListener(new View.OnClickListener() {
+        bt_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                if (et_username.getText().length() > 5 &&
-                        et_email.getText().length() > 10 &&
-                        et_password.getText().length() >= 8 &&
-                        Integer.parseInt(String.valueOf(et_idade.getText())) >= 12 &&
-                        et_assunto_favorito.getText().length() > 5) {
+                if (et_username.getText().toString().length() > 5 &&
+                        et_email.getText().toString().length() > 10 &&
+                        et_password.getText().toString().length() >= 8 &&
+                        Integer.parseInt(et_idade.getText().toString().trim()) >= 12 &&
+                        et_assunto_favorito.getText().toString().length() > 5) {
+
+                    //inserir usuário no banco de dados
 
                     Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                     startActivity(intent);
+
                 } else {
                     Toast.makeText(RegisterActivity.this, "Por favor, insira todos os dados corretamente", Toast.LENGTH_LONG).show();
                 }

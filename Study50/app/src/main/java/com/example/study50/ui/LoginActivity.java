@@ -19,15 +19,21 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
         bt_register = findViewById(R.id.bt_register);
         bt_login = findViewById(R.id.bt_login);
+
 
 
         bt_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                //inserir verificação de usuários existentes no banco de dados
+
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
+
             }
         });
 
@@ -35,8 +41,10 @@ public class LoginActivity extends AppCompatActivity {
         bt_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
+
             }
         });
     }
