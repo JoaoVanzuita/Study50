@@ -15,6 +15,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.example.study50.dataBase.DBHelper;
 import com.example.study50.databinding.ActivityMainBinding;
 import com.example.study50.ui.ConfiguracoesFragment;
 import com.example.study50.ui.ConversasFragment;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private AppBarConfiguration mAppBarConfiguration;
 
     private final ArrayList<Turma> listaTurmas = new ArrayList<>();
+
+
 
     /*
     função para retornar um ArrayList de Turma. Ao invés de criar o ArrayList em um fragment e
@@ -69,6 +72,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavController navController = Navigation.findNavController(this, R.id.fragment_container);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
+
+
+
+        DBHelper dataBase = new DBHelper(getBaseContext());
+        dataBase.getReadableDatabase();
+
 
     }
 
