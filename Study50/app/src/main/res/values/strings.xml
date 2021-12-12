@@ -49,5 +49,8 @@
     <string name="alterar_idioma">Alterar idioma</string>
     <string name="entrar_em_contato">Entrar em contato com\n os desenvolvedores</string>
     <string name="logout">Logout</string>
+    <string name="registro_adicionado">Registro adicionado com sucesso.</string>
+    <string name="ocorreu_erro">Ocorreu um erro. Por favor reinicie o app.</string>
+    <string name="dados_incorretos">Por favor, insira todos os dados corretamente.</string>
 
 </resources>

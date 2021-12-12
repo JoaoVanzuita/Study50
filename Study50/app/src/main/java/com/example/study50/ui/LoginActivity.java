@@ -12,16 +12,14 @@ import com.example.study50.R;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private Button bt_register, bt_login;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
 
-        bt_register = findViewById(R.id.bt_register);
-        bt_login = findViewById(R.id.bt_login);
+        Button bt_register = findViewById(R.id.bt_register);
+        Button bt_login = findViewById(R.id.bt_login);
 
 
 
@@ -29,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //inserir verificação de usuários existentes no banco de dados
+                //verificação de usuários existentes no banco de dados
 
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);

@@ -32,12 +32,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private final ArrayList<Turma> listaTurmas = new ArrayList<>();
 
-
-
-    /*
-    função para retornar um ArrayList de Turma. Ao invés de criar o ArrayList em um fragment e
-    passar para outro por parcelable, ele é "hospedado" na MainActivity e acessado pelos fragments
-    */
     public ArrayList<Turma> getListaTurmas() {
         return this.listaTurmas;
     }
@@ -45,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void adicionarTurma(String nomeTurma) {
         listaTurmas.add(new Turma(nomeTurma));
     }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,11 +70,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationUI.setupWithNavController(navigationView, navController);
 
 
-
-
-
-        DBHelper dataBase = new DBHelper(getBaseContext());
-        dataBase.getReadableDatabase();
+        DBHelper dataBaseReadable = new DBHelper(getBaseContext());
+        dataBaseReadable.getReadableDatabase();
 
 
     }
@@ -98,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
@@ -145,6 +139,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         abrirFragment(fragmentSelecionado);
         setTitle(item.getTitle());
+
         return true;
     }
 

@@ -40,6 +40,7 @@
         android:gravity="center"
         android:hint="@string/senha"
         android:inputType="textPassword"
+        android:maxLength="8"
         android:textSize="25sp" />
 
     <EditText
