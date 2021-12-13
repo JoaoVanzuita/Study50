@@ -61,7 +61,7 @@ public class TurmasFragment extends Fragment{
             public void onClick(View view) {
 
                 AlertDialog.Builder criarTurmaDialog = new AlertDialog.Builder(context);
-                criarTurmaDialog.setTitle("Digite o nome da turma a ser criada");
+                criarTurmaDialog.setTitle(R.string.digite_nome_turma);
 
                 final EditText et_nomeTurma = new EditText(context);
 
@@ -69,7 +69,7 @@ public class TurmasFragment extends Fragment{
 
                 criarTurmaDialog.setView(et_nomeTurma);
 
-                criarTurmaDialog.setPositiveButton("Criar turma", new DialogInterface.OnClickListener() {
+                criarTurmaDialog.setPositiveButton(R.string.criar_turma, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
@@ -77,17 +77,17 @@ public class TurmasFragment extends Fragment{
                         if(et_nomeTurma.getText().length() > 3){
                             nomeTurma = et_nomeTurma.getText().toString();
 
-                            Toast.makeText(context, "Turma " + nomeTurma + " criada", Toast.LENGTH_LONG).show();
+                            Toast.makeText(context, getString(R.string.turma) + nomeTurma + getString(R.string.criada), Toast.LENGTH_LONG).show();
 
                             listaTurmas.add(new Turma(nomeTurma));
                         }else{
-                            Toast.makeText(context, "Por favor, insira um nome válido para criar a turma", Toast.LENGTH_LONG).show();
+                            Toast.makeText(context, R.string.insira_nome_valido, Toast.LENGTH_LONG).show();
                             dialogInterface.cancel();
                         }
                     }
                 });
 
-                criarTurmaDialog.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                criarTurmaDialog.setNegativeButton(R.string.cancelar, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.cancel();
