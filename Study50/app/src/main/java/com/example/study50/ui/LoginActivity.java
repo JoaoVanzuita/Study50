@@ -1,14 +1,19 @@
 package com.example.study50.ui;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.study50.MainActivity;
 import com.example.study50.R;
+import com.example.study50.dataBase.DBHelper;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -17,9 +22,15 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        DBHelper db = new DBHelper(getBaseContext());
+        SQLiteDatabase database = db.getReadableDatabase();
+
 
         Button bt_register = findViewById(R.id.bt_register);
         Button bt_login = findViewById(R.id.bt_login);
+
+        EditText et_username = findViewById(R.id.et_username_Login);
+        EditText et_password = findViewById(R.id.et_password_Login);
 
 
 
@@ -27,10 +38,63 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //verificação de usuários existentes no banco de dados
+                //verificação de usuários existentes no banco de dados - TÁ DANDO MERDA
 
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
+
+                if(et_username.getText().toString().length() != 0 && et_password.getText().toString().length() != 0) {
+
+
+                    String username = et_username.getText().toString().trim();
+                    String password = et_password.getText().toString().trim();
+
+
+                    try{
+
+                        String query = "select * from usuario where nome = '" + username + "' and senha = '" + password + "';";
+
+                        Cursor cursor = database.rawQuery(query, null);
+                        boolean registroEncontrado;
+
+                        //verifica se o registro foi encontrado
+                        if(cursor.getCount() <= 0 ){
+
+                            Toast.makeText(LoginActivity.this, R.string.registro_nao_encontrado, Toast.LENGTH_SHORT).show();
+
+                            registroEncontrado = false;
+
+
+                        }else{
+
+                            registroEncontrado = true;
+
+                        }
+
+                        if(registroEncontrado){
+
+                            Intent intentt = new Intent(LoginActivity.this, MainActivity.class);
+                            startActivity(intentt);
+
+                        }
+
+                        cursor.close();
+
+
+                    }catch (Exception e){
+
+                        e.printStackTrace();
+
+                        Toast.makeText(getBaseContext(), R.string.ocorreu_erro, Toast.LENGTH_LONG).show();
+
+
+                    }
+
+                }else{
+
+                    Toast.makeText(getBaseContext(), R.string.preencha_corretamente, Toast.LENGTH_LONG).show();
+
+                }
+
+                database.close();
 
             }
         });

@@ -43,9 +43,9 @@ public class RegisterActivity extends AppCompatActivity {
         DBHelper db = new DBHelper(getBaseContext());
         SQLiteDatabase database = db.getWritableDatabase();
 
-        EditText et_username = findViewById(R.id.et_username);
+        EditText et_username = findViewById(R.id.et_username_Register);
         EditText et_email = findViewById(R.id.et_email);
-        EditText et_password = findViewById(R.id.et_password);
+        EditText et_password = findViewById(R.id.et_password_Register);
         EditText et_idade = findViewById(R.id.et_idade);
         EditText et_assunto_favorito = findViewById(R.id.et_assunto_favorito);
         Button bt_registrar = findViewById(R.id.bt_registrar);
