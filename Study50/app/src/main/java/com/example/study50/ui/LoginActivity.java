@@ -38,8 +38,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //verificação de usuários existentes no banco de dados - TÁ DANDO MERDA
-
+                //verificação de usuários existentes no banco de dados
 
                 if(et_username.getText().toString().length() != 0 && et_password.getText().toString().length() != 0) {
 
@@ -60,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
 
                             Toast.makeText(LoginActivity.this, R.string.registro_nao_encontrado, Toast.LENGTH_SHORT).show();
 
+
                             registroEncontrado = false;
 
 
@@ -71,12 +71,13 @@ public class LoginActivity extends AppCompatActivity {
 
                         if(registroEncontrado){
 
-                            Intent intentt = new Intent(LoginActivity.this, MainActivity.class);
-                            startActivity(intentt);
+                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            intent.putExtra("login", username);
+
+                            startActivity(intent);
 
                         }
 
-                        cursor.close();
 
 
                     }catch (Exception e){
@@ -91,6 +92,7 @@ public class LoginActivity extends AppCompatActivity {
                 }else{
 
                     Toast.makeText(getBaseContext(), R.string.preencha_corretamente, Toast.LENGTH_LONG).show();
+
 
                 }
 

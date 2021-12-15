@@ -81,7 +81,9 @@ public class TurmasFragment extends Fragment{
 
                             listaTurmas.add(new Turma(nomeTurma));
                         }else{
+
                             Toast.makeText(context, R.string.insira_nome_valido, Toast.LENGTH_LONG).show();
+
                             dialogInterface.cancel();
                         }
                     }
@@ -102,7 +104,7 @@ public class TurmasFragment extends Fragment{
 
         lista = view.findViewById(R.id.lista_turmas);
 
-        listaTurmas= ((MainActivity) requireActivity()).getListaTurmas();
+        listaTurmas = ((MainActivity) requireActivity()).getListaTurmas();
 
 
         adapter = new TurmaAdapter(listaTurmas, context);

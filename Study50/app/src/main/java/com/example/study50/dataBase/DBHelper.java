@@ -51,7 +51,9 @@ public class DBHelper extends SQLiteOpenHelper {
             sqLiteDatabase.execSQL(sqlTem);
 
         }catch (Exception e){
+
             e.printStackTrace();
+
         }
 
     }

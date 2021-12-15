@@ -35,8 +35,13 @@
     <string name="adicionar_turma">Adicionar turma</string>
     <string name="title_activity_login">LoginActivity</string>
 
-    <string name="usuario">Usuário</string>
+
+    <!-- \ u0020 é um código unicode para espaçamento entre as
+    palavras que serão concatenadas com Strings-->
+
+    <string name="usuario">Usuário \u0020</string>
     <string name="senha">Senha</string>
+    <string name="entrou">\u0020 entrou</string>
     <string name="login">Login</string>
     <string name="registrar">Registrar</string>
     <string name="texto_bt_register">Ainda não possui uma conta?</string>
@@ -47,18 +52,19 @@
     <string name="icone_do_app">Ícone do app</string>
     <string name="editar_perfil">Editar Perfil</string>
     <string name="alterar_idioma">Alterar idioma</string>
-    <string name="entrar_em_contato">Entrar em contato com\n os desenvolvedores</string>
+    <string name="contatos_dos_devs">Contatos dos desenvolvedores</string>
     <string name="logout">Logout</string>
-    <string name="registro_adicionado">Registro adicionado com sucesso.</string>
-    <string name="ocorreu_erro">Ocorreu um erro. Por favor reinicie o app.</string>
-    <string name="dados_incorretos">Por favor, insira todos os dados corretamente.</string>
+    <string name="registro_adicionado">Registro adicionado com sucesso</string>
+    <string name="ocorreu_erro">Ocorreu um erro. Por favor reinicie o app</string>
+    <string name="dados_incorretos">Por favor, insira todos os dados corretamente</string>
     <string name="cancelar">Cancelar</string>
     <string name="insira_nome_valido">Por favor, insira um nome válido para criar a turma</string>
-    <string name="turma">\"Turma \"</string>
-    <string name="criada">\" criada\"</string>
+    <string name="turma">Turma \u0020</string>
+    <string name="criada">\u0020 criada</string>
     <string name="criar_turma">Criar turma</string>
     <string name="digite_nome_turma">Digite o nome da turma a ser criada</string>
-    <string name="registro_nao_encontrado">Login ou senha incorretos.</string>
+    <string name="registro_nao_encontrado">Login ou senha incorretos</string>
     <string name="preencha_corretamente">Preencha os campos corretamente</string>
+    <string name="contatos">Meios de contato:</string>
 
 </resources>

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -15,7 +16,6 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.study50.dataBase.DBHelper;
 import com.example.study50.databinding.ActivityMainBinding;
 import com.example.study50.ui.ConfiguracoesFragment;
 import com.example.study50.ui.ConversasFragment;
@@ -40,10 +40,37 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         listaTurmas.add(new Turma(nomeTurma));
     }
 
+    public void limparListaTurmas(){
+        listaTurmas.clear();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+        try {
+
+            String username = null;
+
+            Bundle extras = getIntent().getExtras();
+            if (extras != null) {
+                username = extras.getString("login");
+            }
+
+            Toast.makeText(MainActivity.this, getString(R.string.usuario) + username + getString(R.string.entrou), Toast.LENGTH_SHORT).show();
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+
+            Toast.makeText(MainActivity.this, R.string.ocorreu_erro, Toast.LENGTH_LONG).show();
+
+        }
+
+
+
+
 
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -67,10 +94,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavController navController = Navigation.findNavController(this, R.id.fragment_container);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
-
-        DBHelper dataBaseReadable = new DBHelper(getBaseContext());
-        dataBaseReadable.getReadableDatabase();
 
 
     }
