@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Study</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Username</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configurações</string>
+    <string name="pesquisar">Search</string>
+
+    <string name="descricao">Description</string>
+    <string name="procurar_turmas">Search for classes</string>
+    <string name="conversas">Chat</string>
+    <string name="favoritos">Favorites</string>
+    <string name="configuracoes">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+    <string name="turmas">Classes</string>
+    <string name="modo_escuro">Turn on dark mode</string>
+    <string name="nome_da_turma">Class name</string>
+    <string name="adicionar_turma">Add class</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+
+    <!-- \ u0020 é um código unicode para espaçamento entre as
+    palavras que serão concatenadas com Strings-->
+
+    <string name="usuario">User \u0020</string>
+    <string name="senha">Password</string>
+    <string name="entrou">\u0020 entered</string>
+    <string name="login">Sign in</string>
+    <string name="registrar">Sign up</string>
+    <string name="texto_bt_register">Do not have an account?</string>
+    <string name="nome">Name</string>
+    <string name="email">Email</string>
+    <string name="idade">Age</string>
+    <string name="assunto_favorito">Favorite subject</string>
+    <string name="icone_do_app">Ícone do app</string>
+    <string name="editar_perfil">Edit profile</string>
+    <string name="alterar_idioma">Change language</string>
+    <string name="contatos_dos_devs">Developer contact</string>
+    <string name="logout">Logout</string>
+    <string name="registro_adicionado">record added successfully</string>
+    <string name="ocorreu_erro">An error has occurred. Please restart the app</string>
+    <string name="dados_incorretos">Please, insert all data correctly</string>
+    <string name="cancelar">Cancel</string>
+    <string name="insira_nome_valido">Please, insert a valid name to create the class</string>
+    <string name="turma">Class \u0020</string>
+    <string name="criada">\u0020 created</string>
+    <string name="criar_turma">Create class</string>
+    <string name="digite_nome_turma">Enter the class name to be created</string>
+    <string name="registro_nao_encontrado">Incorrect username or password</string>
+    <string name="preencha_corretamente">Fill in the fields correctly</string>
+    <string name="contatos">Means of contact:</string>
+
+</resources>

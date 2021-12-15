@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Study</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Username</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configurações</string>
+    <string name="pesquisar">Pesquisar</string>
+
+    <string name="descricao">Descripción </string>
+    <string name="procurar_turmas">Buscar clases</string>
+    <string name="conversas">Conversaciones</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="configuracoes">Configuraciones</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+    <string name="turmas">Clases</string>
+    <string name="modo_escuro">Activa el modo oscuro</string>
+    <string name="nome_da_turma">Nombre de la classe</string>
+    <string name="adicionar_turma">Agregar clase</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+
+    <!-- \ u0020 é um código unicode para espaçamento entre as
+    palavras que serão concatenadas com Strings-->
+
+    <string name="usuario">Usuario \u0020</string>
+    <string name="senha">Contraseña</string>
+    <string name="entrou">\u0020 llegó </string>
+    <string name="login">Sign in</string>
+    <string name="registrar">Sign up</string>
+    <string name="texto_bt_register">¿No tiene una cuenta?</string>
+    <string name="nome">Nombre</string>
+    <string name="email">Email</string>
+    <string name="idade">Edad</string>
+    <string name="assunto_favorito">Tema favorito</string>
+    <string name="icone_do_app">Ícone do app</string>
+    <string name="editar_perfil">Editar perfil</string>
+    <string name="alterar_idioma">Cambiar idioma</string>
+    <string name="contatos_dos_devs">Contacto de desarrolladores</string>
+    <string name="logout">Logout</string>
+    <string name="registro_adicionado">Registro agregado exitosamente</string>
+    <string name="ocorreu_erro">Se ha producido un error. Reinicia la aplicación</string>
+    <string name="dados_incorretos">Por favor inserte todos los datos correctamente</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="insira_nome_valido">Inserta un nombre válido para crear la clase.</string>
+    <string name="turma">Clase \u0020</string>
+    <string name="criada">\u0020 criada</string>
+    <string name="criar_turma"> Criar clase</string>
+    <string name="digite_nome_turma">Escribe el nombre de la clase a ser criada</string>
+    <string name="registro_nao_encontrado">Nombre de usuario o contraseña incorrecta</string>
+    <string name="preencha_corretamente">Complete los campos correctamente</string>
+    <string name="contatos">Contactos:</string>
+</resources>

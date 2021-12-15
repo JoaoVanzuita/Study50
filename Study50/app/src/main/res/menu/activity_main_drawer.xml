@@ -15,9 +15,6 @@
         <item android:id="@+id/nav_turmas"
             android:title="@string/procurar_turmas"/>
 
-        <item android:id="@+id/nav_conversas"
-            android:title="@string/conversas"/>
-
         <item android:id="@+id/nav_favoritos"
             android:title="@string/favoritos"/>
 
