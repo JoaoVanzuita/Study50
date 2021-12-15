@@ -10,7 +10,6 @@
         </menu>
     </item>
 
-
     <group android:checkableBehavior="single">
         <item android:id="@+id/nav_turmas"
             android:title="@string/procurar_turmas"/>
