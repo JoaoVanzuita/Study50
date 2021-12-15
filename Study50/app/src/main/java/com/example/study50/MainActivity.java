@@ -18,7 +18,6 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.study50.databinding.ActivityMainBinding;
 import com.example.study50.ui.ConfiguracoesFragment;
-import com.example.study50.ui.ConversasFragment;
 import com.example.study50.ui.FavoritosFragment;
 import com.example.study50.ui.TurmasFragment;
 import com.google.android.material.navigation.NavigationView;
@@ -88,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_turmas, R.id.nav_conversas, R.id.nav_favoritos, R.id.nav_configuracoes)
+                R.id.nav_turmas, R.id.nav_favoritos, R.id.nav_configuracoes)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.fragment_container);
@@ -141,11 +140,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (item.getItemId()) {
             case R.id.nav_turmas:
                 fragmentSelecionado = new TurmasFragment();
-
-                break;
-
-            case R.id.nav_conversas:
-                fragmentSelecionado = new ConversasFragment();
 
                 break;
 

@@ -12,12 +12,6 @@
         tools:layout="@layout/fragment_turmas" />
 
     <fragment
-        android:id="@+id/nav_conversas"
-        android:name="com.example.study50.ui.ConversasFragment"
-        android:label="@string/conversas"
-        tools:layout="@layout/fragment_conversas" />
-
-    <fragment
         android:id="@+id/nav_favoritos"
         android:name="com.example.study50.ui.FavoritosFragment"
         android:label="@string/favoritos"
