@@ -19,6 +19,5 @@
 
         <item android:id="@+id/nav_configuracoes"
             android:title="@string/configuracoes"/>
-
     </group>
 </menu>
