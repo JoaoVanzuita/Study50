@@ -37,7 +37,6 @@
         android:width="200dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/usuario"
         android:inputType="textPersonName"
         android:textSize="25sp" />
 

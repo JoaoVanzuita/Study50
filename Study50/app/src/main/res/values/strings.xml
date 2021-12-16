@@ -67,4 +67,11 @@
     <string name="preencha_corretamente">Preencha os campos corretamente</string>
     <string name="contatos">Contatos:</string>
 
+    <string-array name="lista_idiomas">
+        <item>Padrão</item>
+        <item>Inglês</item>
+        <item>Espanhol</item>
+        <item>Português Br</item>
+    </string-array>
+
 </resources>

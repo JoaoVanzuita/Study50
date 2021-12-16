@@ -41,19 +41,17 @@ public class ConfiguracoesFragment extends Fragment {
 
         TextView contato = view.findViewById(R.id.tv_contato);
         TextView logout = view.findViewById(R.id.tv_logout);
-
-
-        //Só falta atribuir os eventos onClick
         TextView idioma = view.findViewById(R.id.tv_alterar_idioma);
-        TextView tema = view.findViewById(R.id.sw_modo_escuro);
+
+
+
 
         idioma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Fragment fragment = new IdiomasFragment();
-
-                ((MainActivity) requireActivity()).abrirFragment(fragment);
+                Intent intent = new Intent(getContext(), IdiomasActivity.class);
+                startActivity(intent);
 
             }
         });
