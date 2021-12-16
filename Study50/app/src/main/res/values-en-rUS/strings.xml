@@ -53,9 +53,9 @@
     <string name="icone_do_app">Ícone do app</string>
     <string name="editar_perfil">Edit profile</string>
     <string name="alterar_idioma">Change language</string>
-    <string name="contatos_dos_devs">Developer contact</string>
+    <string name="contatos_dos_devs">Developers contacts</string>
     <string name="logout">Logout</string>
-    <string name="registro_adicionado">record added successfully</string>
+    <string name="registro_adicionado">Record added successfully</string>
     <string name="ocorreu_erro">An error has occurred. Please restart the app</string>
     <string name="dados_incorretos">Please, insert all data correctly</string>
     <string name="cancelar">Cancel</string>
@@ -66,6 +66,6 @@
     <string name="digite_nome_turma">Enter the class name to be created</string>
     <string name="registro_nao_encontrado">Incorrect username or password</string>
     <string name="preencha_corretamente">Fill in the fields correctly</string>
-    <string name="contatos">Means of contact:</string>
+    <string name="contatos">Contacts:</string>
 
 </resources>

@@ -65,8 +65,6 @@
     <string name="digite_nome_turma">Digite o nome da turma a ser criada</string>
     <string name="registro_nao_encontrado">Login ou senha incorretos</string>
     <string name="preencha_corretamente">Preencha os campos corretamente</string>
-    <string name="contatos">Meios de contato:</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contatos">Contatos:</string>
 
 </resources>

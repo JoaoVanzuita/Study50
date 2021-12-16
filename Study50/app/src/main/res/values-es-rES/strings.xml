@@ -5,14 +5,14 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Username</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Configurações</string>
-    <string name="pesquisar">Pesquisar</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="pesquisar">Buscar</string>
 
     <string name="descricao">Descripción </string>
     <string name="procurar_turmas">Buscar clases</string>
     <string name="conversas">Conversaciones</string>
     <string name="favoritos">Favoritos</string>
-    <string name="configuracoes">Configuraciones</string>
+    <string name="configuracoes">Ajustes</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
@@ -53,13 +53,13 @@
     <string name="icone_do_app">Ícone do app</string>
     <string name="editar_perfil">Editar perfil</string>
     <string name="alterar_idioma">Cambiar idioma</string>
-    <string name="contatos_dos_devs">Contacto de desarrolladores</string>
+    <string name="contatos_dos_devs">Contactos de desarrolladores</string>
     <string name="logout">Logout</string>
     <string name="registro_adicionado">Registro agregado exitosamente</string>
-    <string name="ocorreu_erro">Se ha producido un error. Reinicia la aplicación</string>
+    <string name="ocorreu_erro">Hubo un error. Reinicia la aplicación</string>
     <string name="dados_incorretos">Por favor inserte todos los datos correctamente</string>
     <string name="cancelar">Cancelar</string>
-    <string name="insira_nome_valido">Inserta un nombre válido para crear la clase.</string>
+    <string name="insira_nome_valido">Inserta un nombre válido para crear la clase</string>
     <string name="turma">Clase \u0020</string>
     <string name="criada">\u0020 criada</string>
     <string name="criar_turma"> Criar clase</string>

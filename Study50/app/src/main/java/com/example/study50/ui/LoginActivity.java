@@ -22,8 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        DBHelper db = new DBHelper(getBaseContext());
-        SQLiteDatabase database = db.getReadableDatabase();
+
 
 
         Button bt_register = findViewById(R.id.bt_register);
@@ -38,20 +37,27 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                DBHelper db = new DBHelper(getBaseContext());
+                SQLiteDatabase database = db.getReadableDatabase();
+                Cursor cursor = null;
+
+                String username;
+                String password;
+
                 //verificação de usuários existentes no banco de dados
 
                 if(et_username.getText().toString().length() != 0 && et_password.getText().toString().length() != 0) {
 
 
-                    String username = et_username.getText().toString().trim();
-                    String password = et_password.getText().toString().trim();
+                    username = et_username.getText().toString().trim();
+                    password = et_password.getText().toString().trim();
 
 
                     try{
 
                         String query = "select * from usuario where nome = '" + username + "' and senha = '" + password + "';";
 
-                        Cursor cursor = database.rawQuery(query, null);
+                        cursor = database.rawQuery(query, null);
                         boolean registroEncontrado;
 
                         //verifica se o registro foi encontrado
@@ -96,7 +102,14 @@ public class LoginActivity extends AppCompatActivity {
 
                 }
 
+                cursor.close();
                 database.close();
+
+                et_username.setText(null);
+                et_password.setText(null);
+
+                username = null;
+                password = null;
 
             }
         });
